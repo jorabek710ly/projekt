@@ -709,44 +709,17 @@
   .bg-\[\#F9F8F8\] {
     background-color: #F9F8F8;
   }
-  .bg-\[url\(\.\/\)\] {
-    background-image: url(./);
-  }
-  .bg-\[url\(\.\/img\)\] {
-    background-image: url(./img);
-  }
-  .bg-\[url\(\.\/img\/\)\] {
-    background-image: url(./img/);
-  }
-  .bg-\[url\(\.\/img\/b\)\] {
-    background-image: url(./img/b);
-  }
-  .bg-\[url\(\.\/img\/bg\)\] {
-    background-image: url(./img/bg);
-  }
-  .bg-\[url\(\.\/img\/bg-1\)\] {
-    background-image: url(./img/bg-1);
-  }
-  .bg-\[url\(\.\/img\/bg-1\.\)\] {
-    background-image: url(./img/bg-1.);
-  }
-  .bg-\[url\(\.\/img\/bg-1\.png\)\] {
-    background-image: url(./img/bg-1.png);
-  }
-  .bg-\[url\(\.\/img\/bg-2\.png\)\] {
-    background-image: url(./img/bg-2.png);
+  .bg-\[url\(\.\/\/img\/image\.png\)\] {
+    background-image: url(.//img/image.png);
   }
   .bg-\[url\(\.\/img\/image\.png\)\] {
     background-image: url(./img/image.png);
   }
-  .bg-\[url\(\/\.\/img\/image\.png\)\] {
-    background-image: url(/./img/image.png);
+  .bg-\[url\(\.\/src\/img\/image\.png\)\] {
+    background-image: url(./src/img/image.png);
   }
-  .bg-\[url\(\/\/img\/image\.png\)\] {
-    background-image: url(//img/image.png);
-  }
-  .bg-\[url\(\/img\/bg-2\.png\)\] {
-    background-image: url(/img/bg-2.png);
+  .bg-\[url\(\/img\/image\.png\)\] {
+    background-image: url(/img/image.png);
   }
   .bg-\[url\(\/src\/img\/bg-1\.png\)\] {
     background-image: url(/src/img/bg-1.png);
@@ -756,6 +729,9 @@
   }
   .bg-\[url\(\/src\/img\/image\.png\)\] {
     background-image: url(/src/img/image.png);
+  }
+  .bg-\[url\(cr\/img\/image\.png\)\] {
+    background-image: url(cr/img/image.png);
   }
   .bg-cover {
     background-size: cover;
