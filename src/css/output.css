@@ -518,6 +518,12 @@
   }
 }
 @layer utilities {
+  .collapse {
+    visibility: collapse;
+  }
+  .relative {
+    position: relative;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -538,6 +544,9 @@
   }
   .mx-auto {
     margin-inline: auto;
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
   }
   .mt-3\.5 {
     margin-top: calc(var(--spacing) * 3.5);
@@ -560,11 +569,23 @@
   .mt-\[140px\] {
     margin-top: 140px;
   }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
   }
   .grid {
     display: grid;
+  }
+  .inline-flex {
+    display: inline-flex;
+  }
+  .list-item {
+    display: list-item;
+  }
+  .table {
+    display: table;
   }
   .h-\[11px\] {
     height: 11px;
@@ -605,8 +626,14 @@
   .max-w-\[600px\] {
     max-width: 600px;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -681,6 +708,45 @@
   }
   .bg-\[\#F9F8F8\] {
     background-color: #F9F8F8;
+  }
+  .bg-\[url\(\.\/\)\] {
+    background-image: url(./);
+  }
+  .bg-\[url\(\.\/img\)\] {
+    background-image: url(./img);
+  }
+  .bg-\[url\(\.\/img\/\)\] {
+    background-image: url(./img/);
+  }
+  .bg-\[url\(\.\/img\/b\)\] {
+    background-image: url(./img/b);
+  }
+  .bg-\[url\(\.\/img\/bg\)\] {
+    background-image: url(./img/bg);
+  }
+  .bg-\[url\(\.\/img\/bg-1\)\] {
+    background-image: url(./img/bg-1);
+  }
+  .bg-\[url\(\.\/img\/bg-1\.\)\] {
+    background-image: url(./img/bg-1.);
+  }
+  .bg-\[url\(\.\/img\/bg-1\.png\)\] {
+    background-image: url(./img/bg-1.png);
+  }
+  .bg-\[url\(\.\/img\/bg-2\.png\)\] {
+    background-image: url(./img/bg-2.png);
+  }
+  .bg-\[url\(\.\/img\/image\.png\)\] {
+    background-image: url(./img/image.png);
+  }
+  .bg-\[url\(\/\.\/img\/image\.png\)\] {
+    background-image: url(/./img/image.png);
+  }
+  .bg-\[url\(\/\/img\/image\.png\)\] {
+    background-image: url(//img/image.png);
+  }
+  .bg-\[url\(\/img\/bg-2\.png\)\] {
+    background-image: url(/img/bg-2.png);
   }
   .bg-\[url\(\/src\/img\/bg-1\.png\)\] {
     background-image: url(/src/img/bg-1.png);
@@ -795,6 +861,13 @@
   }
   .text-\[\#fff\] {
     color: #fff;
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .transition-\[0\.3s\] {
     transition-property: 0.3s;
@@ -998,4 +1071,9 @@
 @property --tw-tracking {
   syntax: "*";
   inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
